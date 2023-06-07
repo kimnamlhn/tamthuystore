@@ -191,526 +191,664 @@
 		<script type='application/ld+json'>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://thienmocspa.com","name":"thienmocspa"}},{"@type":"ListItem","position":2,"item":{"@id":"http://thienmocspa.com/gioi-thieu.html","name":"Giới Thiệu"}}]}</script>		<!-- schema.org ends -->
 	</head>
 	<body class="page">
-				<div id="body">
+		<!-- Messenger Plugin chat Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Plugin chat code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+	
+		<script>
+		  var chatbox = document.getElementById('fb-customer-chat');
+		  chatbox.setAttribute("page_id", "103171172810185");
+		  chatbox.setAttribute("attribution", "biz_inbox");
+		</script>
+	
+		<!-- Your SDK code -->
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v17.0'
+			});
+		  };
+	
+		  (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+</script>
+		<div id="body">
 			<div id="header">
-	<nav class="bg-white">
-	<div class="container menu_1">
-		<div class="row d-flex flex-row w-100 text_center">
-			<div class="flex-menu-left">
-									
-				<a href="./" class="d-block logo-menu">
-					<img src="upload/log-thienmocspa.png" alt="">
-				</a>
+				<nav class="bg-white">
+					<div class="container menu_1">
+						<div class="row d-flex flex-row w-100 text_center">
+							<div class="flex-menu-left">
+		
+								<a href="./" class="d-block logo-menu">
+									<img src="upload/log-thienmocspa.png" alt="">
+								</a>
 							</div>
-			<div class="flex-menu-right d-flex align-items-center justify-content-end none_mobile">
-				<div class="">
-					<ul class="menu-center d-flex">
-													<li class="position-relative ">
-								<a class="text-dark" href="/.">
-									Trang Chủ																		</a>
-																</li>
-													<li class="position-relative ">
-								<a class="text-dark" href="/gioi-thieu.html">
-									Giới Thiệu																			<i class="pl-1 fas fa-sort-down"></i>
-																		</a>
-																		<ul class="dropdow-menu-center position-absolute">
-																					<li><a href="/founder-le-thi-my-phung.html">Founder Lê Thị Mỹ Phụng</a></li>
-									   											<li><a href="/ve-thuong-hieu.html">Về Thương Hiệu</a></li>
-									   									</ul>
-																</li>
-													<li class="position-relative ">
-								<a class="text-dark" href="/san-pham.html">
-									Sản Phẩm																			<i class="pl-1 fas fa-sort-down"></i>
-																		</a>
-																		<ul class="dropdow-menu-center position-absolute">
-																					<li><a href="/san-pham-lam-sach-va-bao-ve.html">Sản phẩm làm sạch và bảo vệ</a></li>
-									   											<li><a href="/san-pham-duong-da.html">Sản phẩm dưỡng da</a></li>
-									   											<li><a href="/san-pham-ho-tro-chuyen-sau.html">Sản phẩm hỗ trợ chuyên sâu</a></li>
-									   									</ul>
-																</li>
-													<li class="position-relative ">
-								<a class="text-dark" href="/dich-vu.html">
-									Dịch Vụ																		</a>
-																</li>
-													<li class="position-relative ">
-								<a class="text-dark" href="/goc-chia-se.html">
-									Góc Chia Sẻ																		</a>
-																</li>
-													<li class="position-relative ">
-								<a class="text-dark" href="/lien-he.html">
-									Liên Hệ																		</a>
-																</li>
+							<div class="flex-menu-right d-flex align-items-center justify-content-end none_mobile">
+								<div class="">
+									<ul class="menu-center d-flex">
+										<li class="position-relative ">
+											<a class="text-dark" href="/.">
+												Trang Chủ </a>
+										</li>
+										<li class="position-relative ">
+											<a class="text-dark" href="/gioi-thieu.html">
+												Giới Thiệu <i class="pl-1 fas fa-sort-down"></i>
+											</a>
+											<ul class="dropdow-menu-center position-absolute">
+												<li><a href="/founder-le-thi-my-phung.html">Founder Lê Thị Mỹ Phụng</a></li>
+												<li><a href="/ve-thuong-hieu.html">Về Thương Hiệu</a></li>
 											</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</nav>
-<style>
-	.menu_fixed{
-		position: sticky;
-		top: 0;
-	    width: 100%;
-	    z-index: 99990;
-	    -webkit-transition: 0.3s;
-	    -moz-transition: 0.3s;
-	    -o-transition: 0.3s;
-	    transition: 0.3s;
-	}
-	#header{
-		    box-shadow: 0 0 10px 0 #bbb;
-	}
-	.menu_1{
-		    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	}
-@media (min-width: 1200px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1080px;
-}
-</style>
-<script>
-	var mq = window.matchMedia("(max-width: 991px)");
-    if (!mq.matches) {
-          // $('.primary-menu').css('height',  $('.top-block').outerHeight(true)+'px');
-      }
-    $(document).scroll(function() {
-        didScroll = true;
-        // if (!mq.matches) {
-            if ($(this).scrollTop() > 0) {
-               $('#header').addClass('menu_fixed');
-
-            }else{
-              $('#header').removeClass('menu_fixed');
-            }
-            
-
-        // }
-    });
-</script>	<header id="menu-mobile" class="header-mobile ">
-	<nav>
-		<!-- <span class="text-white d-flex justify-content-center">Menu</span> -->
-		<hr class="m-0">
-		<ul class="d-flex flex-column ">
-			<li class="d-flex flex-menu-top-item-mobile flex-column">
-				<div class="justify-content-between nav-item-mobile align-items-center p-1 menu_cl" style="display: none;">
-					<a href="">Menu</a>
-					<button class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-						<i class="fas fa-bars i_mobile"></i>
-					</button>
-				</div>
-				<ul class=" collapse bg-menu-sub-mobile" id="exCollapsingNavbar2">
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/." class="a_cate_mobile">Trang Chủ</a>
-													</div>
-						
-					</li>
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/gioi-thieu.html" class="a_cate_mobile">Giới Thiệu</a>
-															<button class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar_sub_1">
-								<i class="fas fa-chevron-right" style="font-size: 14px;color: #fff;"></i>
-								</button>
-													</div>
-												<ul class="collapse" id="exCollapsingNavbar_sub_1">
-														<li class="nav-item-sub-sub nav_item_mobile" >
-								<a class="" href="/founder-le-thi-my-phung.html">Founder Lê Thị Mỹ Phụng</a>
-							</li>
-														<li class="nav-item-sub-sub nav_item_mobile" >
-								<a class="" href="/ve-thuong-hieu.html">Về Thương Hiệu</a>
-							</li>
-							
-						</ul>
-						
-					</li>
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/san-pham.html" class="a_cate_mobile">Sản Phẩm</a>
-															<button class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar_sub_2">
-								<i class="fas fa-chevron-right" style="font-size: 14px;color: #fff;"></i>
-								</button>
-													</div>
-												<ul class="collapse" id="exCollapsingNavbar_sub_2">
-														<li class="nav-item-sub-sub nav_item_mobile" >
-								<a class="" href="/san-pham-lam-sach-va-bao-ve.html">Sản phẩm làm sạch và bảo vệ</a>
-							</li>
-														<li class="nav-item-sub-sub nav_item_mobile" >
-								<a class="" href="/san-pham-duong-da.html">Sản phẩm dưỡng da</a>
-							</li>
-														<li class="nav-item-sub-sub nav_item_mobile" >
-								<a class="" href="/san-pham-ho-tro-chuyen-sau.html">Sản phẩm hỗ trợ chuyên sâu</a>
-							</li>
-							
-						</ul>
-						
-					</li>
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/dich-vu.html" class="a_cate_mobile">Dịch Vụ</a>
-													</div>
-						
-					</li>
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/goc-chia-se.html" class="a_cate_mobile">Góc Chia Sẻ</a>
-													</div>
-						
-					</li>
-									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
-						<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
-							<a href="/lien-he.html" class="a_cate_mobile">Liên Hệ</a>
-													</div>
-						
-					</li>
-								</ul>
-				
-			</li>
-		</ul>
-	</nav>
-</header>
-<script>
-	$('.toggle-mobile-click').click(function(event) {
-			$($(this).data('target')).on('hidden.bs.collapse', function (e) {
-				clicked = $(document).find("[data-target='#" + $(e.target).attr('id') + "']");
-				$(document).find("[data-target='#" + $(e.target).attr('id') + "']").find('i').removeClass('rotate-90');
-			})
-			$($(this).data('target')).on('show.bs.collapse', function (e) {
-				clicked = $(document).find("[data-target='#" + $(e.target).attr('id') + "']");
-				$(document).find("[data-target='#" + $(e.target).attr('id') + "']").find('i').addClass('rotate-90');
-			})
-	});
-</script></div>
-			<section class="main-title-section-wrapper default" style="">	
-	<div class="container">		
-					<div class="main-title-section">
-																	<h1>Giới Thiệu</h1>	
-							</div>
-				<ol class="breadcrumb padd_0">
-			
-			<li>
-				<a href="./">
-					Home
-				</a>
-			</li>
-									<li class="active">Giới Thiệu</li>
-							</ol>	
-	</div>
-</section>
-<style>
-@media only screen and (max-width: 1380px) and (min-width: 1200px){
-	.container{
-	    width: 1080px;
-	}
-}
-.breadcrumb>li+li:before {
-    /* padding: 0 5px; */
-    color: #000;
-    padding: 0;
-    /* content: none; */
-}
-
-.breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    /* content: none; */
-}
-.breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    content: "/\00a0";
-}
-.breadcrumb a {
-    color: #2b2b2b;
-}
-.main-title-section h1 {
-	    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 36px;
-    letter-spacing: 0px;
-    line-height: 1.5;
-    text-transform: none;
-    color: #333333;
-    font-size: 30px;
-    font-weight: 700;
-    color: #2b2b2b;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-.main-title-section {
-    float: left;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    pointer-events: none;
-}
-.padd_0{
-	padding:0;
-}
-.main-title-section-wrapper {
-    /*float: left;*/
-        display: flex;
-    width: 100%;
-    margin: 0px 0px 65px;
-    padding: 40px 0px 43px;
-
-    position: relative;
-    clear: both;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.breadcrumb{
-	background: none;
-	    clear: both;
-    float: left;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.6);
-}
-	/*#breadcrumb {
-		font-size: 15px;
-		border-bottom: solid 1px #ccc;
-	}
-	.breadcrumb {
-		background: transparent;
-		margin-bottom: 0;
-		padding: 0;
-	}
-	.breadcrumb li {
-		line-height: 50px;
-	}
-.breadcrumb > li + li:before {
-    content: "\f053";
-    position: relative;
-    top: 0;
-    font-family: "Font Awesome 5 Free";
-    font-size: 10px;
-    font-weight: 600;
-    padding: 0 10px 0 7px;
-    color: #f8b516;
-    opacity: .5;
-    /* height: 100%; */
-    /* display: flex; */
-/*}
-	.breadcrumb li a {
-		color: #f8b516;
-		-webkit-transition: all .5s;
-		-o-transition: all .5s;
-		transition: all .5s;
-	}
-	.breadcrumb li a:hover {
-		color: #777;
-	}
-	.breadcrumb li.active {
-    color: #89b846;
-}*/
-</style><section id="content" class="page_dm">
-	<figure class="container">
-		<div class="row">
-			<div class="">
-				<h3 style="text-align: center;"><meta charset="utf-8" /><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Mộc Spa - Chặng đường dựng x&acirc;y v&agrave; ph&aacute;t triển</b></h3>
-&nbsp;
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Được th&agrave;nh lập v&agrave; đi v&agrave;o hoạt động từ năm 2015 - 2016, Mộc Spa l&agrave; một trong những thương hiệu mỹ phẩm được nhiều kh&aacute;ch h&agrave;ng tin tưởng, với chất lượng sản phẩm tuyệt vời c&ugrave;ng với những trải nghiệm kh&aacute;ch h&agrave;ng kh&aacute;c biệt.</b></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Với định hướng ph&aacute;t triển thương hiệu mỹ phẩm từ thi&ecirc;n nhi&ecirc;n, Mộc Spa mang đến cho thị trường c&aacute;c d&ograve;ng sản phẩm chăm s&oacute;c da v&agrave; hỗ trợ cải thiện c&aacute;c vấn đề n&aacute;m, mụn, t&agrave;n nhang hiệu quả, an to&agrave;n v&agrave; l&agrave;nh t&iacute;nh. Ở mỗi kh&acirc;u trong qu&aacute; tr&igrave;nh ph&aacute;t triển v&agrave; ho&agrave;n thiện sản phẩm đều được thực hiện nghi&ecirc;m ngặt, kỹ lưỡng nhằm mang đến cho kh&aacute;ch h&agrave;ng những sản phẩm chất lượng đạt hiệu quả cao.</b></p>
-
-<p><img class="img-responsive" src="upload/noi-dung/z2843303854035-644d0667f8c33c7cbd665413b5fc6349.jpg" /></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">C&aacute;c sản phẩm thuộc thương hiệu mỹ phẩm Mộc Spa được ph&aacute;t triển bởi đội ngũ chuy&ecirc;n gia gi&agrave;u kinh nghiệm dựa tr&ecirc;n những nghi&ecirc;n cứu chuy&ecirc;n s&acirc;u về điều kiện thời tiết, kh&iacute; hậu, l&agrave;n da c&ugrave;ng nhu cầu v&agrave; th&oacute;i quen sử dụng mỹ phẩm của người Việt, ch&iacute;nh bởi vậy mọi sản phẩm khi được đưa ra thị trường đều nhanh ch&oacute;ng được kh&aacute;ch h&agrave;ng tin tưởng v&agrave; đ&oacute;n nhận. C&ocirc;ng thức sản phẩm kh&aacute;c biệt, vượt trội, l&agrave; sự tiếp thu c&oacute; chọn lọc từ c&aacute;c cường quốc mỹ phẩm tr&ecirc;n thế giới, tạo n&ecirc;n tinh hoa chăm s&oacute;c l&agrave;n da hiệu quả v&agrave; ph&ugrave; hợp nhất.</b></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Đối với nguy&ecirc;n liệu, Mộc Spa ch&uacute; trọng đến c&aacute;c th&agrave;nh phần c&oacute; nguồn gốc từ thi&ecirc;n nhi&ecirc;n, l&agrave;nh t&iacute;nh, an to&agrave;n nhưng mang lại hiệu quả cao v&agrave; l&acirc;u d&agrave;i. Đối với c&aacute;c th&agrave;nh phần nhập khẩu từ nước ngo&agrave;i lu&ocirc;n được đảm bảo trong điều kiện ti&ecirc;u chuẩn, kiểm tra gắt gao về chất lượng thường xuy&ecirc;n nhằm đảm bảo sự đồng nhất về chất lượng sản phẩm.</b></p>
-
-<p><img class="img-responsive" src="upload/noi-dung/z2843308363249-d870a867f94943dd4611d9702fc968a5.jpg" /></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Mộc Spa đầu tư v&agrave; ch&uacute; trọng đến thiết kế v&agrave; kiểu d&aacute;ng sản phẩm với mẫu m&atilde; đa dạng, phong ph&uacute; kh&ocirc;ng chỉ đảm bảo t&iacute;nh thẩm mỹ m&agrave; c&ograve;n tạo n&ecirc;n sự kh&aacute;c biệt, thu h&uacute;t v&agrave; ấn tượng ri&ecirc;ng trong mắt kh&aacute;ch h&agrave;ng. Mỗi sản phẩm đều được thiết kế v&agrave; lựa chọn tỉ mỉ từ m&agrave;u sắc, kiểu d&aacute;ng, hướng đến sự tiện &iacute;ch, tiện lợi v&agrave; dễ d&agrave;ng cho người sử dụng, gi&uacute;p kh&aacute;ch h&agrave;ng c&oacute; thể linh hoạt về thời gian, kh&ocirc;ng gian khi sử dụng sản phẩm v&agrave; đạt được hiệu quả cao nhất.</b></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Kh&ocirc;ng chỉ g&acirc;y ấn tượng tốt với kh&aacute;ch h&agrave;ng bởi mẫu m&atilde;, chất lượng, Mộc Spa c&ograve;n đầu tư v&agrave;o quy tr&igrave;nh sản xuất, nhằm đảm bảo sự vượt trội v&agrave; ho&agrave;n hảo trong mọi c&ocirc;ng đoạn. Quy tr&igrave;nh sản xuất được thực hiện trong kh&ocirc;ng gian nh&agrave; m&aacute;y rộng lớn, kh&eacute;p k&iacute;n. Hệ thống trang thiết bị được đầu tư hiện đại, c&ocirc;ng suất lớn, tự động h&oacute;a, hạn chế tối đa những sai s&oacute;t trong sản xuất, đ&aacute;p ứng nhu cầu ng&agrave;y c&agrave;ng cao của doanh nghiệp v&agrave; thị trường.</b></p>
-
-<p><img class="img-responsive" src="upload/noi-dung/z2847239791530-e7d14eecd19365fcb15625073aacbec1-2.jpg" /></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Đội ngũ nh&acirc;n c&ocirc;ng sản xuất được đ&agrave;o tạo chuy&ecirc;n nghiệp với t&aacute;c phong c&ocirc;ng nghiệp v&agrave; kỷ luật cao, lu&ocirc;n thực h&agrave;nh sản xuất với ti&ecirc;u ch&iacute; &ldquo;nhanh - chất lượng - an to&agrave;n&quot; để mang đến những sản phẩm ho&agrave;n hảo nhất, chất lượng nhất đến tay người ti&ecirc;u d&ugrave;ng.</b></p>
-
-<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Với sự nỗ lực kh&ocirc;ng ngừng nghỉ qua từng năm, Mộc Spa tin tưởng sẽ trở th&agrave;nh một trong những thương hiệu mỹ phẩm Việt đ&aacute;ng tin cậy của kh&aacute;ch h&agrave;ng c&ugrave;ng với những trải nghiệm ng&agrave;y c&agrave;ng tận t&acirc;m, chuy&ecirc;n nghiệp v&agrave; hậu đ&atilde;i.</b></p>
-
-<h3>&nbsp;</h3>
-
-<p style="text-align: center;">&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>			</div>
-		</div>
-	</figure>
-</section>
-			<footer id="footer">
-	<div class="footer-widgets">
-		<div class="container">
-			<div class="column dt-sc-one-half first ">
-				<aside id="text-10" class="widget widget_text">			
-					<div class="textwidget">
-						<div style="padding: 20px;">
-							<a href=".">
-								<img class="alignnone size-medium wp-image-8133" src="upload/log-thienmocspa.png" alt="" width="250">
-							</a>
-							<div style="padding-top: 20px;"><p>Mộc Spa là thương hiệu spa chuyên chăm sóc da và điều trị các vấn đề về: Mụn – Thâm – Sẹo hàng đầu TP.HCM nói riêng và khu vực phía Nam nói chung.</p>
-
-<p>Không ngừng nâng cấp dịch vụ, không gian và thiết bị cho khách hàng. Mộc Spa tự tin khẳng định là thương hiệu trị mụn UY TÍN – CHẤT LƯỢNG – AN TOÀN, với hơn 8 năm kinh nghiệm cùng kết quả điều trị thành công cho hơn 1.000.000 khách hàng.</p>
-
-<p> </p>
-</div>
-							<br>
-							<a class="dmca-badge" href="javascript:void(0);">
-								<img class="" src="upload/logo/dmca-badge-w150-5x1-10.png" >
-							</a>
-						</div>
-					</div>
-				</aside>
-				<aside id="custom_html-4" class="widget_text widget widget_custom_html">
-					<div class="textwidget custom-html-widget"></div>
-				</aside>
-			</div>
-			<div class="column dt-sc-one-fourth ">
-				<aside id="custom_html-5" class="widget_text widget widget_custom_html">
-					<div class="textwidget custom-html-widget">
-						<div style="padding: 20px">
-							<ul>
-																	<li class="li_trang"><a style="color: #333;" href=".">Trang Chủ</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="gioi-thieu">Giới Thiệu</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="san-pham">Sản Phẩm</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="dich-vu">Dịch Vụ</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="goc-chia-se">Góc Chia Sẻ</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="tin-tuc">Tin Tức</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="tuyen-dung">Tuyển Dụng</a></li>
-																	<li class="li_trang"><a style="color: #333;" href="lien-he">Liên Hệ</a></li>
-																<!-- <li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/lien-he/">Liên hệ - Đặt lịch</a></li>
-								<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/san-pham-eucerin/">Sản phẩm Eucerin</a></li>
-								<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/san-pham-ga-spa/">Sản phẩm độc quyền Gà Spa</a></li>
-								<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/kien-thuc-lam-dep/">Mẹo vặt chăm sóc da</a></li>
-								<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/category/review/">Kết quả điều trị tại Gà Spa</a></li> -->
-							</ul>
-						</div>
-					</div>
-				</aside>
-			</div>
-			<div class="column dt-sc-one-fourth">
-				<aside id="custom_html-2" class="widget_text widget widget_custom_html">
-					<div class="custom-html-widget">
-						<div style="padding: 20px;">
-							<h4 class="heading-title ud-line">FANPAGE</h4>	
-							<div id="fb-root" class=" fb_reset">
-								<div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-									<div></div>
+										</li>
+										<li class="position-relative ">
+											<a class="text-dark" href="/san-pham.html">
+												Sản Phẩm <i class="pl-1 fas fa-sort-down"></i>
+											</a>
+											<ul class="dropdow-menu-center position-absolute">
+												<li><a href="/san-pham-lam-sach-va-bao-ve.html">Sản phẩm làm sạch và bảo vệ</a>
+												</li>
+												<li><a href="/san-pham-duong-da.html">Sản phẩm dưỡng da</a></li>
+												<li><a href="/san-pham-ho-tro-chuyen-sau.html">Sản phẩm hỗ trợ chuyên sâu</a>
+												</li>
+											</ul>
+										</li>
+										<li class="position-relative ">
+											<a class="text-dark" href="/dich-vu.html">
+												Dịch Vụ </a>
+										</li>
+										<li class="position-relative ">
+											<a class="text-dark" href="/goc-chia-se.html">
+												Góc Chia Sẻ </a>
+										</li>
+										<li class="position-relative ">
+											<a class="text-dark" href="/lien-he.html">
+												Liên Hệ </a>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="fb_mobile" style="display: none;">
-								<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/thienmocspa/&tabs=timeline&width=340&height=210&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=469524270532474"  width="340px" height="210px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-								</iframe>
-							</div>
-							<div class="fb_lap">
-								<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/thienmocspa/&tabs=timeline&width=214&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=469524270532474"  width="214px" height="214px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-								</iframe>
-							</div>KẾT NỐI VỚI CHÚNG TÔI 
-							<ul class="dt-sc-sociable  dt-simple-narrow" style="display: flex;">
-								<li class="delicious">
-									<a target="" href="https://www.youtube.com/channel/UCQE_oQjt9BLsyqgguWsHtFg" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #333; margin-right: 20px;"></i></a>
-								</li>
-								<li class="dribbble">
-									<a target="" href="" rel="noopener noreferrer"><i class="fab fa-instagram" style="margin-right: 20px;color: #333;"></i></a>
-								</li>
-								<li class="facebook">
-									<a target="" href="https://www.facebook.com/thienmocspa/" rel="noopener noreferrer"><i class="fab fa-facebook-f" style="color: #333;margin-right: 20px;"></i></a>
-								</li>
-							</ul>
 						</div>
 					</div>
-				</aside>
-			</div>   
+				</nav>
+				<style>
+					.menu_fixed {
+						position: sticky;
+						top: 0;
+						width: 100%;
+						z-index: 99990;
+						-webkit-transition: 0.3s;
+						-moz-transition: 0.3s;
+						-o-transition: 0.3s;
+						transition: 0.3s;
+					}
+		
+					#header {
+						box-shadow: 0 0 10px 0 #bbb;
+					}
+		
+					.menu_1 {
+						height: 90px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+		
+					@media (min-width: 1200px) {
+		
+						.container,
+						.container-lg,
+						.container-md,
+						.container-sm,
+						.container-xl {
+							max-width: 1080px;
+						}
+				</style>
+				<script>
+					var mq = window.matchMedia("(max-width: 991px)");
+					if (!mq.matches) {
+						// $('.primary-menu').css('height',  $('.top-block').outerHeight(true)+'px');
+					}
+					$(document).scroll(function () {
+						didScroll = true;
+						// if (!mq.matches) {
+						if ($(this).scrollTop() > 0) {
+							$('#header').addClass('menu_fixed');
+
+						} else {
+							$('#header').removeClass('menu_fixed');
+						}
+
+
+						// }
+					});
+				</script>
+				<header id="menu-mobile" class="header-mobile ">
+					<nav>
+						<!-- <span class="text-white d-flex justify-content-center">Menu</span> -->
+						<hr class="m-0">
+						<ul class="d-flex flex-column ">
+							<li class="d-flex flex-menu-top-item-mobile flex-column">
+								<div class="justify-content-between nav-item-mobile align-items-center p-1 menu_cl"
+									style="display: none;">
+									<a href="">Menu</a>
+									<button
+										class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"
+										type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+										<i class="fas fa-bars i_mobile"></i>
+									</button>
+								</div>
+								<ul class=" collapse bg-menu-sub-mobile" id="exCollapsingNavbar2">
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/." class="a_cate_mobile">Trang Chủ</a>
+										</div>
+		
+									</li>
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/gioi-thieu.html" class="a_cate_mobile">Giới Thiệu</a>
+											<button
+												class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"
+												type="button" data-toggle="collapse" data-target="#exCollapsingNavbar_sub_1">
+												<i class="fas fa-chevron-right" style="font-size: 14px;color: #fff;"></i>
+											</button>
+										</div>
+										<ul class="collapse" id="exCollapsingNavbar_sub_1">
+											<li class="nav-item-sub-sub nav_item_mobile">
+												<a class="" href="/founder-le-thi-my-phung.html">Founder Lê Thị Mỹ Phụng</a>
+											</li>
+											<li class="nav-item-sub-sub nav_item_mobile">
+												<a class="" href="/ve-thuong-hieu.html">Về Thương Hiệu</a>
+											</li>
+		
+										</ul>
+		
+									</li>
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/san-pham.html" class="a_cate_mobile">Sản Phẩm</a>
+											<button
+												class="p-0 d-flex align-items-center toggle-mobile-click tra navbar-toggler hidden-sm-up"
+												type="button" data-toggle="collapse" data-target="#exCollapsingNavbar_sub_2">
+												<i class="fas fa-chevron-right" style="font-size: 14px;color: #fff;"></i>
+											</button>
+										</div>
+										<ul class="collapse" id="exCollapsingNavbar_sub_2">
+											<li class="nav-item-sub-sub nav_item_mobile">
+												<a class="" href="/san-pham-lam-sach-va-bao-ve.html">Sản phẩm làm sạch và bảo
+													vệ</a>
+											</li>
+											<li class="nav-item-sub-sub nav_item_mobile">
+												<a class="" href="/san-pham-duong-da.html">Sản phẩm dưỡng da</a>
+											</li>
+											<li class="nav-item-sub-sub nav_item_mobile">
+												<a class="" href="/san-pham-ho-tro-chuyen-sau.html">Sản phẩm hỗ trợ chuyên
+													sâu</a>
+											</li>
+		
+										</ul>
+		
+									</li>
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/dich-vu.html" class="a_cate_mobile">Dịch Vụ</a>
+										</div>
+		
+									</li>
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/goc-chia-se.html" class="a_cate_mobile">Góc Chia Sẻ</a>
+										</div>
+		
+									</li>
+									<li class="nav-item-sub " style="    border-bottom: 1px solid #ddd;">
+										<div class="d-flex justify-content-between align-items-center p-1 height_40 padd_0_15">
+											<a href="/lien-he.html" class="a_cate_mobile">Liên Hệ</a>
+										</div>
+		
+									</li>
+								</ul>
+		
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<script>
+					$('.toggle-mobile-click').click(function (event) {
+						$($(this).data('target')).on('hidden.bs.collapse', function (e) {
+							clicked = $(document).find("[data-target='#" + $(e.target).attr('id') + "']");
+							$(document).find("[data-target='#" + $(e.target).attr('id') + "']").find('i').removeClass('rotate-90');
+						})
+						$($(this).data('target')).on('show.bs.collapse', function (e) {
+							clicked = $(document).find("[data-target='#" + $(e.target).attr('id') + "']");
+							$(document).find("[data-target='#" + $(e.target).attr('id') + "']").find('i').addClass('rotate-90');
+						})
+					});
+				</script>
+			</div>
+			<section class="main-title-section-wrapper default" style="">
+				<div class="container">
+					<div class="main-title-section">
+						<h1>Giới Thiệu</h1>
+					</div>
+					<ol class="breadcrumb padd_0">
+		
+						<li>
+							<a href="./">
+								Home
+							</a>
+						</li>
+						<li class="active">Giới Thiệu</li>
+					</ol>
+				</div>
+			</section>
+			<style>
+				@media only screen and (max-width: 1380px) and (min-width: 1200px) {
+					.container {
+						width: 1080px;
+					}
+				}
+		
+				.breadcrumb>li+li:before {
+					/* padding: 0 5px; */
+					color: #000;
+					padding: 0;
+					/* content: none; */
+				}
+		
+				.breadcrumb>li+li:before {
+					padding: 0 5px;
+					color: #ccc;
+					/* content: none; */
+				}
+		
+				.breadcrumb>li+li:before {
+					padding: 0 5px;
+					color: #ccc;
+					content: "/\00a0";
+				}
+		
+				.breadcrumb a {
+					color: #2b2b2b;
+				}
+		
+				.main-title-section h1 {
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					font-size: 36px;
+					letter-spacing: 0px;
+					line-height: 1.5;
+					text-transform: none;
+					color: #333333;
+					font-size: 30px;
+					font-weight: 700;
+					color: #2b2b2b;
+					text-transform: uppercase;
+					margin-bottom: 0;
+				}
+		
+				.main-title-section {
+					float: left;
+					width: 100%;
+					margin: 0px;
+					padding: 0px;
+					position: relative;
+					pointer-events: none;
+				}
+		
+				.padd_0 {
+					padding: 0;
+				}
+		
+				.main-title-section-wrapper {
+					/*float: left;*/
+					display: flex;
+					width: 100%;
+					margin: 0px 0px 65px;
+					padding: 40px 0px 43px;
+		
+					position: relative;
+					clear: both;
+					background-color: rgba(0, 0, 0, 0.05);
+				}
+		
+				.breadcrumb {
+					background: none;
+					clear: both;
+					float: left;
+					width: 100%;
+					margin: 0px;
+					padding: 0px;
+					font-size: 13px;
+					font-weight: 500;
+					color: rgba(0, 0, 0, 0.6);
+				}
+		
+				/*#breadcrumb {
+				font-size: 15px;
+				border-bottom: solid 1px #ccc;
+			}
+			.breadcrumb {
+				background: transparent;
+				margin-bottom: 0;
+				padding: 0;
+			}
+			.breadcrumb li {
+				line-height: 50px;
+			}
+		.breadcrumb > li + li:before {
+		    content: "\f053";
+		    position: relative;
+		    top: 0;
+		    font-family: "Font Awesome 5 Free";
+		    font-size: 10px;
+		    font-weight: 600;
+		    padding: 0 10px 0 7px;
+		    color: #f8b516;
+		    opacity: .5;
+		    /* height: 100%; */
+				/* display: flex; */
+				/*}
+			.breadcrumb li a {
+				color: #f8b516;
+				-webkit-transition: all .5s;
+				-o-transition: all .5s;
+				transition: all .5s;
+			}
+			.breadcrumb li a:hover {
+				color: #777;
+			}
+			.breadcrumb li.active {
+		    color: #89b846;
+		}*/
+			</style>
+			<section id="content" class="page_dm">
+				<figure class="container">
+					<div class="row">
+						<div class="">
+							<h3 style="text-align: center;">
+								<meta charset="utf-8" /><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Mộc Spa
+									- Chặng đường dựng x&acirc;y v&agrave; ph&aacute;t triển</b>
+							</h3>
+							&nbsp;
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Được th&agrave;nh lập
+									v&agrave; đi v&agrave;o hoạt động từ năm 2015 - 2016, Mộc Spa l&agrave; một trong những
+									thương hiệu mỹ phẩm được nhiều kh&aacute;ch h&agrave;ng tin tưởng, với chất lượng sản phẩm
+									tuyệt vời c&ugrave;ng với những trải nghiệm kh&aacute;ch h&agrave;ng kh&aacute;c biệt.</b>
+							</p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Với định hướng
+									ph&aacute;t triển thương hiệu mỹ phẩm từ thi&ecirc;n nhi&ecirc;n, Mộc Spa mang đến cho thị
+									trường c&aacute;c d&ograve;ng sản phẩm chăm s&oacute;c da v&agrave; hỗ trợ cải thiện
+									c&aacute;c vấn đề n&aacute;m, mụn, t&agrave;n nhang hiệu quả, an to&agrave;n v&agrave;
+									l&agrave;nh t&iacute;nh. Ở mỗi kh&acirc;u trong qu&aacute; tr&igrave;nh ph&aacute;t triển
+									v&agrave; ho&agrave;n thiện sản phẩm đều được thực hiện nghi&ecirc;m ngặt, kỹ lưỡng nhằm
+									mang đến cho kh&aacute;ch h&agrave;ng những sản phẩm chất lượng đạt hiệu quả cao.</b></p>
+		
+							<p><img class="img-responsive"
+									src="upload/noi-dung/z2843303854035-644d0667f8c33c7cbd665413b5fc6349.jpg" /></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">C&aacute;c sản phẩm
+									thuộc thương hiệu mỹ phẩm Mộc Spa được ph&aacute;t triển bởi đội ngũ chuy&ecirc;n gia
+									gi&agrave;u kinh nghiệm dựa tr&ecirc;n những nghi&ecirc;n cứu chuy&ecirc;n s&acirc;u về điều
+									kiện thời tiết, kh&iacute; hậu, l&agrave;n da c&ugrave;ng nhu cầu v&agrave; th&oacute;i quen
+									sử dụng mỹ phẩm của người Việt, ch&iacute;nh bởi vậy mọi sản phẩm khi được đưa ra thị trường
+									đều nhanh ch&oacute;ng được kh&aacute;ch h&agrave;ng tin tưởng v&agrave; đ&oacute;n nhận.
+									C&ocirc;ng thức sản phẩm kh&aacute;c biệt, vượt trội, l&agrave; sự tiếp thu c&oacute; chọn
+									lọc từ c&aacute;c cường quốc mỹ phẩm tr&ecirc;n thế giới, tạo n&ecirc;n tinh hoa chăm
+									s&oacute;c l&agrave;n da hiệu quả v&agrave; ph&ugrave; hợp nhất.</b></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Đối với nguy&ecirc;n
+									liệu, Mộc Spa ch&uacute; trọng đến c&aacute;c th&agrave;nh phần c&oacute; nguồn gốc từ
+									thi&ecirc;n nhi&ecirc;n, l&agrave;nh t&iacute;nh, an to&agrave;n nhưng mang lại hiệu quả cao
+									v&agrave; l&acirc;u d&agrave;i. Đối với c&aacute;c th&agrave;nh phần nhập khẩu từ nước
+									ngo&agrave;i lu&ocirc;n được đảm bảo trong điều kiện ti&ecirc;u chuẩn, kiểm tra gắt gao về
+									chất lượng thường xuy&ecirc;n nhằm đảm bảo sự đồng nhất về chất lượng sản phẩm.</b></p>
+		
+							<p><img class="img-responsive"
+									src="upload/noi-dung/z2843308363249-d870a867f94943dd4611d9702fc968a5.jpg" /></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Mộc Spa đầu tư
+									v&agrave; ch&uacute; trọng đến thiết kế v&agrave; kiểu d&aacute;ng sản phẩm với mẫu
+									m&atilde; đa dạng, phong ph&uacute; kh&ocirc;ng chỉ đảm bảo t&iacute;nh thẩm mỹ m&agrave;
+									c&ograve;n tạo n&ecirc;n sự kh&aacute;c biệt, thu h&uacute;t v&agrave; ấn tượng ri&ecirc;ng
+									trong mắt kh&aacute;ch h&agrave;ng. Mỗi sản phẩm đều được thiết kế v&agrave; lựa chọn tỉ mỉ
+									từ m&agrave;u sắc, kiểu d&aacute;ng, hướng đến sự tiện &iacute;ch, tiện lợi v&agrave; dễ
+									d&agrave;ng cho người sử dụng, gi&uacute;p kh&aacute;ch h&agrave;ng c&oacute; thể linh hoạt
+									về thời gian, kh&ocirc;ng gian khi sử dụng sản phẩm v&agrave; đạt được hiệu quả cao
+									nhất.</b></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Kh&ocirc;ng chỉ
+									g&acirc;y ấn tượng tốt với kh&aacute;ch h&agrave;ng bởi mẫu m&atilde;, chất lượng, Mộc Spa
+									c&ograve;n đầu tư v&agrave;o quy tr&igrave;nh sản xuất, nhằm đảm bảo sự vượt trội v&agrave;
+									ho&agrave;n hảo trong mọi c&ocirc;ng đoạn. Quy tr&igrave;nh sản xuất được thực hiện trong
+									kh&ocirc;ng gian nh&agrave; m&aacute;y rộng lớn, kh&eacute;p k&iacute;n. Hệ thống trang
+									thiết bị được đầu tư hiện đại, c&ocirc;ng suất lớn, tự động h&oacute;a, hạn chế tối đa những
+									sai s&oacute;t trong sản xuất, đ&aacute;p ứng nhu cầu ng&agrave;y c&agrave;ng cao của doanh
+									nghiệp v&agrave; thị trường.</b></p>
+		
+							<p><img class="img-responsive"
+									src="upload/noi-dung/z2847239791530-e7d14eecd19365fcb15625073aacbec1-2.jpg" /></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Đội ngũ nh&acirc;n
+									c&ocirc;ng sản xuất được đ&agrave;o tạo chuy&ecirc;n nghiệp với t&aacute;c phong c&ocirc;ng
+									nghiệp v&agrave; kỷ luật cao, lu&ocirc;n thực h&agrave;nh sản xuất với ti&ecirc;u ch&iacute;
+									&ldquo;nhanh - chất lượng - an to&agrave;n&quot; để mang đến những sản phẩm ho&agrave;n hảo
+									nhất, chất lượng nhất đến tay người ti&ecirc;u d&ugrave;ng.</b></p>
+		
+							<p dir="ltr"><b id="docs-internal-guid-5195f4be-7fff-a861-5fc7-e2c626ee85b2">Với sự nỗ lực
+									kh&ocirc;ng ngừng nghỉ qua từng năm, Mộc Spa tin tưởng sẽ trở th&agrave;nh một trong những
+									thương hiệu mỹ phẩm Việt đ&aacute;ng tin cậy của kh&aacute;ch h&agrave;ng c&ugrave;ng với
+									những trải nghiệm ng&agrave;y c&agrave;ng tận t&acirc;m, chuy&ecirc;n nghiệp v&agrave; hậu
+									đ&atilde;i.</b></p>
+		
+							<h3>&nbsp;</h3>
+		
+							<p style="text-align: center;">&nbsp;</p>
+		
+							<p>&nbsp;</p>
+		
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</figure>
+			</section>
+			<footer id="footer">
+				<div class="footer-widgets">
+					<div class="container">
+						<div class="column dt-sc-one-half first ">
+							<aside id="text-10" class="widget widget_text">
+								<div class="textwidget">
+									<div style="padding: 20px;">
+										<a href=".">
+											<img class="alignnone size-medium wp-image-8133" src="upload/log-thienmocspa.png"
+												alt="" width="250">
+										</a>
+										<div style="padding-top: 20px;">
+											<p>Mộc Spa là thương hiệu spa chuyên chăm sóc da và điều trị các vấn đề về: Mụn –
+												Thâm – Sẹo hàng đầu TP.HCM nói riêng và khu vực phía Nam nói chung.</p>
+		
+											<p>Không ngừng nâng cấp dịch vụ, không gian và thiết bị cho khách hàng. Mộc Spa tự
+												tin khẳng định là thương hiệu trị mụn UY TÍN – CHẤT LƯỢNG – AN TOÀN, với hơn 8
+												năm kinh nghiệm cùng kết quả điều trị thành công cho hơn 1.000.000 khách hàng.
+											</p>
+		
+											<p> </p>
+										</div>
+										<br>
+										<a class="dmca-badge" href="javascript:void(0);">
+											<img class="" src="upload/logo/dmca-badge-w150-5x1-10.png">
+										</a>
+									</div>
+								</div>
+							</aside>
+							<aside id="custom_html-4" class="widget_text widget widget_custom_html">
+								<div class="textwidget custom-html-widget"></div>
+							</aside>
+						</div>
+						<div class="column dt-sc-one-fourth ">
+							<aside id="custom_html-5" class="widget_text widget widget_custom_html">
+								<div class="textwidget custom-html-widget">
+									<div style="padding: 20px">
+										<ul>
+											<li class="li_trang"><a style="color: #333;" href=".">Trang Chủ</a></li>
+											<li class="li_trang"><a style="color: #333;" href="gioi-thieu">Giới Thiệu</a></li>
+											<li class="li_trang"><a style="color: #333;" href="san-pham">Sản Phẩm</a></li>
+											<li class="li_trang"><a style="color: #333;" href="dich-vu">Dịch Vụ</a></li>
+											<li class="li_trang"><a style="color: #333;" href="goc-chia-se">Góc Chia Sẻ</a></li>
+											<li class="li_trang"><a style="color: #333;" href="tin-tuc">Tin Tức</a></li>
+											<li class="li_trang"><a style="color: #333;" href="tuyen-dung">Tuyển Dụng</a></li>
+											<li class="li_trang"><a style="color: #333;" href="lien-he">Liên Hệ</a></li>
+											<!-- <li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/lien-he/">Liên hệ - Đặt lịch</a></li>
+										<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/san-pham-eucerin/">Sản phẩm Eucerin</a></li>
+										<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/san-pham-ga-spa/">Sản phẩm độc quyền Gà Spa</a></li>
+										<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/kien-thuc-lam-dep/">Mẹo vặt chăm sóc da</a></li>
+										<li class="li_trang"><a style="color: #333;" href="https://gaspa.vn/category/review/">Kết quả điều trị tại Gà Spa</a></li> -->
+										</ul>
+									</div>
+								</div>
+							</aside>
+						</div>
+						<div class="column dt-sc-one-fourth">
+							<aside id="custom_html-2" class="widget_text widget widget_custom_html">
+								<div class="custom-html-widget">
+									<div style="padding: 20px;">
+										<h4 class="heading-title ud-line">FANPAGE</h4>
+										<div id="fb-root" class=" fb_reset">
+											<div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+												<div></div>
+											</div>
+										</div>
+										<div class="fb_mobile" style="display: none;">
+											<iframe
+												src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/thienmocspa/&tabs=timeline&width=340&height=210&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=469524270532474"
+												width="340px" height="210px" style="border:none;overflow:hidden" scrolling="no"
+												frameborder="0" allowTransparency="true" allow="encrypted-media">
+											</iframe>
+										</div>
+										<div class="fb_lap">
+											<iframe
+												src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/thienmocspa/&tabs=timeline&width=214&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=469524270532474"
+												width="214px" height="214px" style="border:none;overflow:hidden" scrolling="no"
+												frameborder="0" allowTransparency="true" allow="encrypted-media">
+											</iframe>
+										</div>KẾT NỐI VỚI CHÚNG TÔI
+										<ul class="dt-sc-sociable  dt-simple-narrow" style="display: flex;">
+											<li class="delicious">
+												<a target="" href="https://www.youtube.com/channel/UCQE_oQjt9BLsyqgguWsHtFg"
+													rel="noopener noreferrer"><i class="fab fa-youtube"
+														style="color: #333; margin-right: 20px;"></i></a>
+											</li>
+											<li class="dribbble">
+												<a target="" href="" rel="noopener noreferrer"><i class="fab fa-instagram"
+														style="margin-right: 20px;color: #333;"></i></a>
+											</li>
+											<li class="facebook">
+												<a target="" href="https://www.facebook.com/thienmocspa/"
+													rel="noopener noreferrer"><i class="fab fa-facebook-f"
+														style="color: #333;margin-right: 20px;"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<style>
+				.heading-title {
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					font-size: 23px;
+					letter-spacing: 0px;
+					font-weight: normal;
+					margin-bottom: 20px;
+					line-height: 1.5;
+					text-transform: none;
+					color: #333333;
+				}
+		
+				.li_trang {
+					padding: 0px;
+					border-color: rgba(0, 0, 0, 0.15);
+					border-bottom: 1px dashed;
+					clear: both;
+					display: block;
+					margin: 0px;
+					padding: 10px 0px 10px 20px;
+					position: relative;
+					width: 100%;
+				}
+		
+				.textwidget ul li:before {
+					content: "-";
+					font-family: FontAwesome;
+					font-size: 24px;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					font-weight: bold;
+				}
+		
+				.footer-widgets .widget {
+					clear: both;
+					float: left;
+					margin-bottom: 30px;
+					overflow: hidden;
+					width: 100%;
+				}
+		
+				.dt-sc-one-fourth {
+					width: 23.5%;
+				}
+		
+				.column.first {
+					margin-left: 0px;
+					clear: both;
+				}
+		
+				.dt-sc-one-half {
+					width: 49%;
+				}
+		
+				.column {
+					margin: 0px 0px 0px 2%;
+					float: left;
+					min-height: 1px;
+					position: relative;
+				}
+		
+				.footer-widgets .widget {
+					clear: both;
+					float: left;
+					margin-bottom: 30px;
+					overflow: hidden;
+					width: 100%;
+				}
+		
+				#footer {
+					clear: both;
+					float: left;
+					margin: 0;
+					width: 100%;
+				}
+		
+				.footer-widgets {
+					clear: both;
+					float: left;
+					margin: 0;
+					width: 100%;
+				}
+			</style>
 		</div>
-	</div>
-</footer>
-<style>
-.heading-title{
-	    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 23px;
-    letter-spacing: 0px;
-    font-weight: normal;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-transform: none;
-    color: #333333;
-}
-.li_trang{
-	    padding: 0px;
-    border-color: rgba(0, 0, 0, 0.15);
-    border-bottom: 1px dashed;
-    clear: both;
-    display: block;
-    margin: 0px;
-    padding: 10px 0px 10px 20px;
-    position: relative;
-    width: 100%;
-}
-
-.textwidget ul li:before {
-    content: "-";
-    font-family: FontAwesome;
-    font-size: 24px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-weight: bold;
-}
-
-.footer-widgets .widget {
-    clear: both;
-    float: left;
-    margin-bottom: 30px;
-    overflow: hidden;
-    width: 100%;
-}
-.dt-sc-one-fourth {
-    width: 23.5%;
-}
-.column.first {
-    margin-left: 0px;
-    clear: both;
-}
-
-.dt-sc-one-half {
-    width: 49%;
-}
-.column {
-    margin: 0px 0px 0px 2%;
-    float: left;
-    min-height: 1px;
-    position: relative;
-}
-.footer-widgets .widget {
-    clear: both;
-    float: left;
-    margin-bottom: 30px;
-    overflow: hidden;
-    width: 100%;
-}
-#footer {
-    clear: both;
-    float: left;
-    margin: 0;
-    width: 100%;
-}
-.footer-widgets {
-    clear: both;
-    float: left;
-    margin: 0;
-    width: 100%;
-}
-</style>		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("img").each(function() {
